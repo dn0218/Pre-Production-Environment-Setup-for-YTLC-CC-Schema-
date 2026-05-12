@@ -24,7 +24,7 @@ This document describes the complete process to create a new Pluggable Database 
 We are setting up a pre‑production environment that mirrors production data for the CC suite of applications. The target is a new PDB ytlc_preprod_cc created inside the existing CDB enabling. Data is transferred via Oracle Data Pump (expdp/impdp) with table‑space remapping where necessary. The process excludes statistics and large log table data to save space.
 
 ## Prerequisites
-- **Oracle Database 12c (12.2.0.1.0)** with multi‑tenant option.
+- > **Oracle Database 12c (12.2.0.1.0)** with multi‑tenant option.
 
 - Sufficient disk space on /data4 and /data3 (see tablespace sizing).
 
