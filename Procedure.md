@@ -175,7 +175,7 @@ ALTER USER imp_user PASSWORD EXPIRE;
 ```
 
 ## Appendix: CDB & PDB Concepts
-In Oracle 12c multi‑tenant architecture:
+In Oracle 19c multi‑tenant architecture:
 
 - **CDB (Container Database)** – The overarching database that holds system metadata (CDB$ROOT) and can contain many PDBs.
 
@@ -184,4 +184,5 @@ In Oracle 12c multi‑tenant architecture:
 All operations in this document are performed either at the CDB$ROOT level (creating the PDB) or inside the specific PDB ytlc_preprod_cc (tablespaces, users, import). This isolation ensures that pre‑production work does not affect other PDBs like CC42 or CC86.
 
 _Last updated: 2026‑05‑12
-Environment: Oracle 12.2.0.1.0 on Linux_
+
+Environment: Oracle 19.25.0.0.0 on Oracle Linux 8.6_
