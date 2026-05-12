@@ -184,5 +184,4 @@ In Oracle 19c multi‑tenant architecture:
 All operations in this document are performed either at the CDB$ROOT level (creating the PDB) or inside the specific PDB ytlc_preprod_cc (tablespaces, users, import). This isolation ensures that pre‑production work does not affect other PDBs like CC42 or CC86.
 
 _Last updated: 2026‑05‑12
-
 Environment: Oracle 19.25.0.0.0 on Oracle Linux 8.6_
