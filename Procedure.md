@@ -173,3 +173,15 @@ EXEC DBMS_STATS.GATHER_SCHEMA_STATS('CRM');
 ALTER USER imp_user PASSWORD EXPIRE;
 -- or REVOKE DBA FROM imp_user;
 ```
+
+## Appendix: CDB & PDB Concepts
+In Oracle 12c multi‑tenant architecture:
+
+- **CDB (Container Database)** – The overarching database that holds system metadata (CDB$ROOT) and can contain many PDBs.
+
+- **PDB (Pluggable Database)** – A self‑contained, portable schema and data collection that appears as a standalone database to applications.
+
+All operations in this document are performed either at the CDB$ROOT level (creating the PDB) or inside the specific PDB ytlc_preprod_cc (tablespaces, users, import). This isolation ensures that pre‑production work does not affect other PDBs like CC42 or CC86.
+
+_Last updated: 2026‑05‑12
+Environment: Oracle 12.2.0.1.0 on Linux_
